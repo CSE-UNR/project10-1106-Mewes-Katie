@@ -9,6 +9,8 @@
 void line();
 void WinL(int right, int atemp);
 char guessprom(int a, char guess[a]);
+void compare(int a, int b, char guess[], char unknown[]);
+void instring(int a, int b, char guess[], char unknown[]);
 int main(){
 	char unknown[SIZE];
 	char guess[SIZE][GNUM];
@@ -23,9 +25,9 @@ int main(){
 	}
 	fscanf(fptr, "%s", unknown);
 	fclose(fptr);
-	a++
+	a++;
 	guessprom(attempt, guess[attempt]);
-	
+	line();
 
 	return 0;
 }
@@ -43,6 +45,16 @@ char guessprom(int a, char guess[a]){
 	printf("GUESS %d! Enter Your Guess: ", &a);
 	
 	fscanf("%s", guess[a]);
-}	return guess;
-
-
+	return guess;
+	}
+void compare(int a, int b, char guess[], char unknown[])(
+	char alpha[26]="abcdefghijklmnopqrstuvwxyz";
+	char ALPHAB[26]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	if(guess[a][b]==unknown[b]){
+	printf("");
+)
+void instring(int a, int b, char guess[], char unknown[]){
+	for(int i=0, i<b, i++){
+		if(char guess[a][b]==unknown[i]){
+		}
+}
